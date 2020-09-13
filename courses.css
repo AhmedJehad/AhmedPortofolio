@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+
+
+
+
+.course-list {
+    padding-top: 2em;
+    display: flex;
+    padding-left: 10rem;
+    padding-bottom: 2em;
+    overflow-x: scroll;
+}
+
+.course-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+}
+.course-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.course-list::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+.course {
+    background-color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    width: 5000px;
+    height: 500px;
+    background: var(--bg-primary);
+    box-shadow: -1rem 0 3rem #000;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+.Photo {
+    background-color: #fff;
+    border-radius: 10px;
+
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    width: 500px;
+    height: 450px;
+    background: var(--bg-primary);
+    box-shadow: -1rem 0 3rem #000;
+    transition: .2s;
+
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+.course:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.course:hover {
+    transform: translateY(-1rem);
+}
+
+.course:not(:first-child) {
+    margin-left: -130px;
+}
+.course h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.course h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+    color: white;
+}
+
+.course-preview {
+    background-color: #2fa32a;
+    color: #fff;
+    padding: 30px;
+    max-width: 250px;
+}
+.course-preview1 {
+    background-color: #d72987;
+    color: #fff;
+    padding: 30px;
+    max-width: 250px;
+}
+.course-preview2 {
+    background-color: #e07d14;
+    color: #fff;
+    padding: 30px;
+    max-width: 250px;
+}
+
+.course-preview a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.course-preview1 a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.course-preview2 a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.course-info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.progress-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+    width: 150px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 6px;
+    height: 10px;
+    width: 100%;
+}
+.progress1 {
+    background-color: #ddd;
+    border-radius: 6px;
+    height: 10px;
+    width: 100%;
+}
+.progress2 {
+    background-color: #ddd;
+    border-radius: 6px;
+    height: 10px;
+    width: 100%;
+}
+.progress::after {
+    border-radius: 6px;
+    background-color: #33ba2d;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 66%;
+}
+.progress1::after {
+    border-radius: 6px;
+    background-color: #d72987;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 66%;
+}
+.progress2::after {
+    border-radius: 6px;
+    background-color: #e07d14;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 66%;
+}
+
+.progress-text {
+    font-size: 11px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    color: white;
+}
+.progress1-text {
+    font-size: 11px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.btn {
+    background-color: #2fa32a;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-family: Poppins;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 1px;
+}
+.btn1 {
+    background-color: #d72987;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-family: Poppins;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 1px;
+}
+.btn2 {
+    background-color: #e07d14;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-family: Poppins;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    letter-spacing: 1px;
+}
